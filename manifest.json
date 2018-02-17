@@ -5,6 +5,15 @@
   "description": "This extension lets people encrypt and decrypt messages",
   "version": "1.0",
 
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.anonychat.ga/*"
+      ],
+      "js":["main.js"]
+    }
+  ],
+
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "index.html"
