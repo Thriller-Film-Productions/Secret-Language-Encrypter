@@ -1,4 +1,4 @@
-let users = JSON.parse(localStorage.getItem("users"));
+let users = JSON.parse(StorageArea.get("users"));
 
 //function activateKey() {
   //if () {
@@ -6,11 +6,11 @@ let users = JSON.parse(localStorage.getItem("users"));
       users.push(document.getElementById('name'))={
       key : document.getElementById('key')
     };
-      localStorage.setItem("users", JSON.stringify(users));
-      let users = JSON.parse(localStorage.getItem("users"));
-      console.log(users)
+      StorageArea.set("users", JSON.stringify(users));
+      let users = JSON.parse(StorageArea.get("users"));
+      console.log(users);
     }
   //} else {
 
-  }
+//  }
 //}
